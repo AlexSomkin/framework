@@ -81,7 +81,8 @@
                 }
             }
 
-            echo '404';
+            $notFoundTemplate = new \App\framework\Template\Template();
+            $notFoundTemplate->loadStaticPage(ROOT . "/404.php");
         }
 
         public function getUrls()

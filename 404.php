@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Документ без названия</title>
+        <title>Page not found</title>
     </head>
     <body>
-        Контент
+        Page not found. Error 404
     </body>
 </html>

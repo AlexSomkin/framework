@@ -4,6 +4,8 @@
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
 
+    define('ROOT',dirname(__FILE__));
+
     spl_autoload_register(function($class) {
         $prefix = 'App\\';
         $base_dir = __DIR__ . '/';
@@ -22,7 +24,7 @@
 
     $route = new \App\framework\Route\Route($_SERVER['REQUEST_URI']);
     
-    $route->connect('/', '\App\modules\Framework\lib\Controllers\Framework', 'index');
+    $route->connect('/', '\App\modules\Framework\lib\Controllers\Home\Framework', 'index');
 
     $route->run();
     
