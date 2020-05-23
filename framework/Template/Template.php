@@ -2,7 +2,7 @@
 
     namespace App\framework\Template {
 
-        class Template 
+        class Template extends \App\framework\Application\Application
         {
 
             private $content = '';

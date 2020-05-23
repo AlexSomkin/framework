@@ -4,7 +4,7 @@
 
     use Exception;
 
-    class Route 
+    class Route extends \App\framework\Application\Application
     {
         private $urls = [];
         private $request = '';
