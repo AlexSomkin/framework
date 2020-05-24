@@ -1,6 +1,6 @@
 <?
 
-    namespace App\modules\Framework\lib\Controllers;
+    namespace App\modules\Framework\Controllers;
 
     class Base extends \App\framework\Controller\Controller
     {

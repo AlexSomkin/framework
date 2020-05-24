@@ -1,1 +1,1 @@
-wqeasdwqe
+home page <?= $text ?>

@@ -23,7 +23,7 @@
 
     $route = new \App\framework\Route\Route($_SERVER['REQUEST_URI']);
     
-    $route->connect('/', '\App\modules\Framework\lib\Controllers\Home\Framework', 'index');
+    $route->connect('/', '\App\modules\Framework\Controllers\Home\Framework', 'index');
 
     $route->run();
     

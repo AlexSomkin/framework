@@ -5,10 +5,14 @@
     class Application
     {
 
-        public function _D($var)
+        public function _D($var, $types = false)
         {
             echo '<pre>';
-            var_dump($var);
+            if ($types) {
+                var_dump($var);
+            } else {
+                print_r($var);
+            }
             echo '</pre>';
         }
 

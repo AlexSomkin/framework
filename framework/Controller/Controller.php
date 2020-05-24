@@ -6,7 +6,7 @@
     {
 
         public $template;
-        public $db;
+        public $database;
 
         public function __construct()
         {
@@ -21,7 +21,7 @@
 
         protected function initDatabase()
         {
-            $this->db = new \App\framework\Database\Database();
+            $this->database = new \App\framework\Database\Database();
         }
 
         public function render($path, $params) 
