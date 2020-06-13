@@ -12,17 +12,19 @@
 
         public function index() 
         {
-            $query = "SELECT * FROM test WHERE id = ?";
+            $query = "SELECT * FROM test";
             
-            $result = $this->database->query($query, [2])->getResult();
+            $result = $this->database->query($query)->getResult();
             
-            $text = "";
-            if (count($result) > 0) {
-                $text = $result[0]['name'];
+            $models = [];
+            foreach ($result as $item) {
+                $item['qwe'] = 2;
+                $newModel = new \App\modules\Framework\Models\Test($item);
+                $models[] = $newModel;
             }
 
             $this->render("/home/index", [
-                'text' => $text
+                'models' => $models
             ]);
         }
     }
